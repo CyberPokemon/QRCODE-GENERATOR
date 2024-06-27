@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="outer">
+        <div class="mainheading">
+            <p id="text1">Welcome to</p>
+            <p id="text2">QR Code Generator</p>
+            <p id="author">Made by Imon Mallik</p>
+        </div>
+        <div id="inner2">
+            <div class="workarea">
+                <h1>Generate QR Code</h1>
+                <div id="inputtextdiv">
+                    <input id="inputtext" type="text" placeholder="Type your text or url">
+                </div>
+                <div id="reuirementselector">
+                    <label id="sizetext" for="size">Select size</label>
+                    <select id="size">
+                        <option value="100">100x100</option>
+                        <option value="200">200x200</option>
+                        <option value="300">300x300</option>
+                        <option value="400">400x400</option>
+                        <option value="500">500x500</option>
+                        <option value="600">600x600</option>
+                        <option value="700">700x700</option>
+                        <option value="800">800x800</option>
+                        <option value="900">900x900</option>
+                    </select>
+                </div>
+                <div class="qrCodePic" id="qrbox">
+                </div>
+                <div class="bottom">
+                    <a href="" id="genbtn">Generate</a>
+                    <a href="" id="dwnbtn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="foot-panel1">
+            For source code visit <a href="https://github.com/CyberPokemon/QRCODE-GENERATOR">My Github Page</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
